@@ -73,7 +73,8 @@ x
 y=d1["status"]
 y
 ```
-![image](https://github.com/user-attachments/assets/71001520-b338-4d2b-84fb-9ae5f2d12132)
+![Screenshot 2025-03-26 141111](https://github.com/user-attachments/assets/1a8b94c2-b8ac-46e5-a6c6-d036130f0ea5)
+
 ```
 from sklearn.model_selection import train_test_split
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.4,random_state=45)
@@ -83,18 +84,22 @@ model.fit(x_train,y_train)
 y_pred=model.predict(x_test)
 y_pred
 ```
-![image](https://github.com/user-attachments/assets/8de43793-a9bf-4953-94cd-3fd93de1727d)
+![Screenshot 2025-03-26 141416](https://github.com/user-attachments/assets/af3f353b-63c3-4c3b-96d7-fa58a921e31a)
+
 ```
 from sklearn.metrics import accuracy_score,confusion_matrix,classification_report
 accuracy=accuracy_score(y_test,y_pred)
 accuracy
 ```
-![image](https://github.com/user-attachments/assets/40ece254-212a-4bb3-a474-8b349a625a46)
+![Screenshot 2025-03-26 141510](https://github.com/user-attachments/assets/854effd6-0b96-456c-a87c-a472b174ef67)
+
 ```
 confusion=confusion_matrix(y_test,y_pred)
 confusion
 ```
-![image](https://github.com/user-attachments/assets/c0c78472-2848-47cf-9774-2e276d1b2088)
+![Screenshot 2025-03-26 141515](https://github.com/user-attachments/assets/eb72515d-80fd-4904-a103-6d29a9e5c22f)
+
+
 ```
 from sklearn.metrics import classification_report
 classification_report=classification_report(y_test,y_pred)
